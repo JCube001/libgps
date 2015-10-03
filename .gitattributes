@@ -1,0 +1,12 @@
+# Source files
+*.c text
+*.h text
+
+# CMake files
+*.cmake text
+*.txt text
+*.in text
+
+# Other files
+*.md text
+LICENSE text
