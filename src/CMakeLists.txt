@@ -1,4 +1,6 @@
-# FIXME: Add installation directives for libgps
+cmake_minimum_required(VERSION 3.25)
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR})
-add_library(${PROJECT_NAME} STATIC gps.c)
+if(NOT TARGET libgps)
+    add_library(libgps STATIC gps.c)
+    target_include_directories(libgps PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+endif()
