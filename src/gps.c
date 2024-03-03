@@ -47,7 +47,7 @@ static const char NULL_TIME[] = "0000-00-00T00:00:00.000Z";
 
 static char uint8_to_hex_char(const uint8_t n)
 {
-    static const hex[] = {
+    static const char hex[] = {
         '0', '1', '2', '3', '4', '5', '6', '7',
         '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'
     };
